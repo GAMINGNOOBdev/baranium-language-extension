@@ -2,6 +2,9 @@
   "name": "baranium-language",
   "displayName": "baranium-language",
   "description": "baranium language support for Visual Studio Code",
+  "repository": {
+    "url": "https://github.com/GAMINGNOOBdev/baranium-language-extension"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.100.0"

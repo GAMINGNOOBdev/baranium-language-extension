@@ -1,0 +1,25 @@
+{
+  "name": "baranium-language",
+  "displayName": "baranium-language",
+  "description": "baranium language support for Visual Studio Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "baranium",
+      "aliases": ["baranium", "baranium"],
+      "extensions": [".bgs",".bar",".brn"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "baranium",
+      "scopeName": "source.baranium",
+      "path": "./syntaxes/baranium.tmLanguage.json"
+    }]
+  }
+}

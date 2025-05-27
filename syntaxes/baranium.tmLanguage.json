@@ -1,0 +1,80 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "baranium",
+	"patterns": [
+		{ "include": "#includes" },
+		{ "include": "#defines" },
+		{ "include": "#comments" },
+		{ "include": "#keywords" },
+		{ "include": "#types" },
+		{ "include": "#constants" },
+		{ "include": "#functions" },
+		{ "include": "#numbers" },
+		{ "include": "#strings" }
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.number-sign.baranium",
+				"match": "#.*$"
+			}]
+		},
+		"includes": {
+			"patterns": [
+				{
+					"name": "meta.preprocessor.include.baranium",
+					"match": "\\+include\\b"
+				}
+			]
+		},
+		"defines": {
+			"patterns":
+			[
+				{
+					"name": "meta.preprocessor.define.baranium",
+					"match": "\\+define\\b"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.baranium",
+				"match": "\\b(field|define|return|if|else|instantiate|delete|attach|detach|do|for|while|break|continue)\\b"
+			}]
+		},
+		"types": {
+			"patterns": [{
+				"name": "storage.type.baranium",
+				"match": "\\b(object|string|float|bool|int|uint|double|byte|ubyte|int16|uint16|int64|uint64|void)\\b"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.language.baranium",
+				"match": "\\b(attached|null|true|false)\\b"
+			}]
+		},
+		"functions": {
+			"patterns": [{
+				"name": "entity.name.function.baranium",
+				"match": "\\b[A-Za-z_][A-Za-z0-9_]*\\s*(?=\\()"
+			}]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric.baranium",
+				"match": "\\b\\d+(\\.\\d+)?\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.baranium",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [{
+				"name": "constant.character.escape.baranium",
+				"match": "\\\\."
+			}]
+		}
+	},
+	"scopeName": "source.baranium"
+}

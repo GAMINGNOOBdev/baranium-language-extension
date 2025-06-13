@@ -16,7 +16,7 @@
     "languages": [{
       "id": "baranium",
       "aliases": ["baranium", "baranium"],
-      "extensions": [".bgs",".bar",".brn"],
+      "extensions": [".bgs",".bar",".brn", ".ib"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{

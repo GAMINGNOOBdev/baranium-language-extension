@@ -9,6 +9,7 @@
   "engines": {
     "vscode": "^1.100.0"
   },
+  "publisher": "GAMINGNOOBdev",
   "icon": "icon.png",
   "categories": [
     "Programming Languages"

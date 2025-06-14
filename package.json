@@ -5,10 +5,11 @@
   "repository": {
     "url": "https://github.com/GAMINGNOOBdev/baranium-language-extension"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.100.0"
   },
+  "icon": "icon.png",
   "categories": [
     "Programming Languages"
   ],
